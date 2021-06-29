@@ -1,0 +1,8 @@
+package inheritance3;
+
+public class Logger {
+    public void log() {
+		System.out.println("Ortak konfigurasyon");
+	}
+
+}
