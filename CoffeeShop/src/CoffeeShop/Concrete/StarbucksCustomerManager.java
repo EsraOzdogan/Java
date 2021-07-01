@@ -14,9 +14,9 @@ public class StarbucksCustomerManager extends BaseCustomerManager {
 
     public void save(Customer customer) throws Exception {
 		if (customerCheckService.checkIfRealPerson(customer)) {
-			System.out.println(" <+> Saved to (Starbucks) database : " + customer.getFirstName() + " " + customer.getLastName());
+			System.out.println("Saved to (Starbucks) database : " + customer.getFirstName() + " " + customer.getLastName());
 		} else {
-			System.out.println(" <-> The customer did not Save to Db, because... ");
+			System.out.println("The customer did not Save to Db, because... ");
 			throw new Exception("WARNING! Not a valid person!"); 
 		}
 	}

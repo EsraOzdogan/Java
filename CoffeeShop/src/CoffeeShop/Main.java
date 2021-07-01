@@ -14,10 +14,11 @@ public class Main {
          customerManager.save(new Customer {1,"Esra", "Özdoðan", 1998, "1556546564" });
 
       */   
-         Customer customer = new Customer(1,"Esra", "Özdoðan", 1998, "52285733814");
+         Customer customer = new Customer(1,"Esra", "Özdoðan", 1998, "5284562354");
          
-        BaseCustomerManager customerManager1 = new StarbucksCustomerManager(new CustomerCheckManager());   
-        // BaseCustomerManager customerManager1 = new StarbucksCustomerManager(new MernisServiceAdapter());   
+        //BaseCustomerManager customerManager1 = new StarbucksCustomerManager(new CustomerCheckManager());   
+        // BaseCustomerManager customerManager1 = new NeroCustomerManager(new MernisServiceAdapter());   
+         BaseCustomerManager customerManager1 = new StarbucksCustomerManager(new MernisServiceAdapter());   
 
          
          try {
